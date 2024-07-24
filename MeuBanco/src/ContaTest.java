@@ -20,5 +20,8 @@ class ContaTest {
 
     @Test
     void getSaldo() {
+        var obj = new Conta(1);
+        assertEquals(1, obj.getSaldo());
+
     }
 }
