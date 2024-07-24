@@ -13,6 +13,9 @@ class ContaTest {
 
     @Test
     void sacar() {
+        var obj = new Conta(100);
+        obj.sacar(20);
+        assertEquals(80, obj.getSaldo());
     }
 
     @Test
