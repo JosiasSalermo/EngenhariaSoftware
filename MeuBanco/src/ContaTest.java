@@ -24,4 +24,10 @@ class ContaTest {
         assertEquals(1, obj.getSaldo());
 
     }
+
+    @Test
+    void sacarAcimaSaldo(){
+        var obj = new Conta(100);
+        assertThrows(Exception.class, () -> obj.sacar(100.01));
+    }
 }

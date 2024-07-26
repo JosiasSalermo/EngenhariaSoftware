@@ -10,7 +10,10 @@ public class Conta {
         saldo += quantia;
     }
 
-    public void sacar (double quantia){
+    public void sacar (double quantia) throws Exception {
+        if(saldo < quantia){
+            throw new Exception("Saldo insuficiente");
+        }
         saldo -= quantia;
     }
 
